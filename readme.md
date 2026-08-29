@@ -72,5 +72,4 @@ The evaluation matrix confirms perfect diagonal alignment across all predicted v
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Decode-Labs-Project2-Data-Classification.git](https://github.com/YOUR_USERNAME/Decode-Labs-Project2-Data-Classification.git)
-cd Decode-Labs-Project2-Data-Classification
+https://github.com/susanprincy121-svg/decode-lab-projects/blob/main/data_classification.ipynb
