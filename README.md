@@ -47,6 +47,6 @@ The chatbot evaluates incoming messages across key intent categories:
 ## 💻 Installation & Usage
 
 ### 1. Clone the Repository
-```bash
+https://github.com/susanprincy121-svg/decode-lab-projects/blob/main/aichatbot%20(1).ipynb
 
 
