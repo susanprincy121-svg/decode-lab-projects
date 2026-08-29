@@ -1,22 +1,52 @@
-AI Chatbot with Predefined User Profiles
+# Decode Labs Project 1: AI Chatbot System
 
-An interactive AI chatbot application that utilizes predefined user profiles/personas to deliver customized, context-aware conversational experiences.
+An interactive Rule-Based AI Chatbot built in Python designed to process natural language user inputs and deliver intelligent, contextual responses.
+
+---
 
 ## 📌 Project Overview
-This project demonstrates the implementation of an AI-powered conversational agent capable of adopting distinct predefined user profiles or personas. By configuring predefined user traits, system prompts, and context parameters, the chatbot tailors its responses to suit specific roles, domain expertise, or tone requirements.
+The objective of this project is to build and deploy a conversational AI agent capable of understanding user intent and providing relevant, automated assistance. By leveraging pattern matching, keyword analysis, and predefined conversational flows, the chatbot simulates human-like interaction for everyday queries.
+
+This project demonstrates foundational concepts in Natural Language Processing (NLP), rule-based intent recognition, input normalization, and interactive command-line application structure.
 
 ---
 
-## ✨ Key Features
-- **Predefined User Personas:** Built-in support for switching between multiple predefined user/system roles.
-- **Context-Aware Responses:** Maintains conversation context while adhering to specific persona guidelines.
-- **Interactive Interface:** Enables real-time chat interactions through an intuitive UI/notebook environment.
-- **Dynamic Prompting:** Leverages system prompts to condition model behavior dynamically.
+## 🛠️ Key Features & Technical Architecture
+
+* **Input Normalization:** Preprocesses raw user text by converting inputs to lowercase and stripping punctuation/whitespace for consistent pattern evaluation.
+* **Intent Recognition Engine:** Maps user queries to broad intent categories (e.g., greetings, help requests, general inquiries, fallbacks) using string matching and regular expressions.
+* **Dynamic Response Generation:** Delivers structured responses tailored to recognized intents and context.
+* **Fallback & Exception Handling:** Gracefully handles unrecognized queries by providing helpful fallback prompts rather than breaking the conversation loop.
+* **Interactive CLI Loop:** Operates inside a continuous runtime loop until an explicit exit command (e.g., `exit`, `quit`, `bye`) is triggered.
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
-- **Language:** Python 3.x
-- **Environment:** Jupyter Notebook / Interactive Python IDE
-- **Libraries:** Pandas, Scikit-Learn (or LLM/API wrappers as applicable)
+## 📊 Intent & Knowledge Mapping
+
+The chatbot evaluates incoming messages across key intent categories:
+
+### Supported Intent Categories
+1. **Greetings & Openings:** Welcomes users and establishes interactive context (e.g., *"hello"*, *"hi"*, *"hey"*).
+2. **Help & Capability Inquiries:** Explains what assistance the bot can provide (e.g., *"what can you do"*, *"help"*).
+3. **General Knowledge / Domain Queries:** Answers predefined domain-specific questions.
+4. **Farewells & Exit Commands:** Terminates the session cleanly (e.g., *"bye"*, *"quit"*, *"exit"*).
+5. **Default Fallback:** Captures out-of-scope inputs and prompts the user for clarification.
+
+---
+
+## ⚙️ Tech Stack & Dependencies
+
+* **Language:** Python 3.x
+* **Environment:** Jupyter Notebook / Anaconda / Python CLI
+* **Libraries:**
+  * `re` – Regular expressions for pattern matching and text normalization
+  * `random` – Dynamic selection of varied response templates
+
+---
+
+## 💻 Installation & Usage
+
+### 1. Clone the Repository
+```bash
+
 
