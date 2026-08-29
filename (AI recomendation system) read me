@@ -1,0 +1,56 @@
+# Decode Labs Project 3: AI Recommendation System
+
+A Content-Based Recommendation System built in Python that dynamically suggests relevant items based on user preferences and textual similarity matching.
+
+---
+
+## 📌 Project Overview
+The objective of this project is to build an intelligent recommendation engine capable of understanding user preferences and matching them against an item catalog. By processing text descriptors into numerical vector spaces, the system calculates semantic distance and ranks items by relevance.
+
+This project demonstrates foundational concepts in Natural Language Processing (NLP), text vectorization using TF-IDF, similarity metrics, and preference-matching algorithms.
+
+---
+
+## 🛠️ Key Features & Technical Architecture
+
+* **Interactive User Input:** Captures raw text inputs representing user preferences, interests, or target keywords.
+* **TF-IDF Text Vectorization:** Transforms both dataset item descriptions and user input into sparse numerical matrices using Term Frequency-Inverse Document Frequency.
+* **Cosine Similarity Engine:** Measures the cosine of the angle between user preference vectors and item vectors to determine textual similarity scores (ranging from 0.0 to 1.0).
+* **Dynamic Ranking & Output:** Automatically sorts dataset items based on calculated similarity percentages and presents the top $N$ recommendations.
+
+---
+
+## 📊 How Recommendation Logic Works
+
+The recommendation pipeline converts qualitative text into quantitative metrics to compute relevance:
+
+### 1. Feature Representation
+Each item in the catalog is represented by descriptive tags and text features:
+* **Item Titles:** e.g., *"Python for Data Science"*, *"Web Development Bootcamp"*
+* **Descriptions:** Detailed feature strings containing keywords, categories, and frameworks.
+
+### 2. Similarity Metric (Cosine Similarity)
+The mathematical similarity score is calculated using the dot product of normalized vectors:
+
+$$\text{Similarity}(A, B) = \frac{A \cdot B}{\Vert{}A\Vert{} \Vert{}B\Vert{}}$$
+
+Where $A$ is the user preference vector and $B$ is an item description vector.
+
+---
+
+## ⚙️ Tech Stack & Dependencies
+
+* **Language:** Python 3.x
+* **Environment:** Jupyter Notebook / Anaconda
+* **Libraries:**
+  * `pandas` – Structured dataset management and output manipulation
+  * `scikit-learn` – Feature extraction (`TfidfVectorizer`) and metric calculation (`cosine_similarity`)
+
+---
+
+## 💻 Installation & Usage
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/YOUR_USERNAME/Decode-Labs-Project3-AI-Recommendation-System.git](https://github.com/YOUR_USERNAME/Decode-Labs-Project3-AI-Recommendation-System.git)
+cd Decode-Labs-Project3-AI-Recommendation-System
